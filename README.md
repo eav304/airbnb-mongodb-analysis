@@ -1,2 +1,5 @@
-# airbnb-mongodb-analysis
-An assignment to import and analyze data published by AirBnB about their listings.
+# AirBnB MongoDB Analysis
+
+A little assignment to practice importing and analyzing data within a MongoDB database.
+
+Replace the contents of this file with a report, as described in the [instructions](./instructions.md).
