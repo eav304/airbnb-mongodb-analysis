@@ -55,15 +55,17 @@ mongoimport --headerline --type=csv --db=your_db_name --collection=listings --ho
 Use the `mongo` command line client to run the following queries - save both the query and the first 3 result documents to include in your report later.
 
 1. show exactly two documents from the `listings` collection in any order
-1. show exactly 10 documents in any order, but print in easier to read format and noting the host names for further use, using the `pretty()` function.
+1. show exactly 10 documents in any order, but "prettyprint" in easier to read format, using the `pretty()` function.
 1. choose two `host_names` who are superhosts (available in the `host_is_superhost` field), and show all of the listings offered by either of the two hosts
    - only show the `name`, `price`, `neighbourhood`, `host_name`, and `host_is_superhost` for each result
 1. find all the unique `host_name` values (see [the docs](https://docs.mongodb.com/manual/reference/method/db.collection.distinct/))
 1. find all of the places that have more than 2 `beds` in a neighborhood of your choice (referred to as `neighbourhood_group_cleansed` in the data file), ordered by `review_scores_rating` descending
-   - only show the `name`, `beds`, `city`, `review_scores_rating`, and `price`
+   - only show the `name`, `beds`, `review_scores_rating`, and `price`
+   - if your data set only has blanks in the `neighbourhood_group_cleansed` field, or only one neighborhood value, use that value as your neighborhood value.
    - if you run out of memory for this query, try filtering `review_scores_rating` that aren't empty (`$ne`); and lastly, if there's still an issue, you can set the `beds` to match exactly 2
 1. show the number of listings per host
-1. in a particular `neighborhood_group_cleansed` of your choosing again, find the average `review_scores_rating` per neighborhood, and only show the ones above a 95, sorted in descending order of rating (see [the docs](https://docs.mongodb.com/manual/reference/operator/aggregation/sort/))
+1. find the average `review_scores_rating` per neighborhood, and only show the ones above a 95, sorted in descending order of rating (see [the docs](https://docs.mongodb.com/manual/reference/operator/aggregation/sort/))
+   - if your data set only has blanks in the `neighbourhood_group_cleansed` field, or only one neighborhood value, pick a different field to break down the listings by and make a note of the field you have chosen and your reasons for doing so in your report.
 
 ### Write a report
 
