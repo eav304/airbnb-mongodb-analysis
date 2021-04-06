@@ -12,13 +12,13 @@ The goals of this assignment are to:
 
 ### The data source
 
-In this assignment, you will work with [AirBnB listings data](http://insideairbnb.com/get-the-data.html) from a city of your choosing.
+In this assignment, you will work with [AirBnB listings data](http://insideairbnb.com/get-the-data.html) from a city/region of your choosing.
 
 ### Save the data
 
 Save the raw data file of your choice into the `data` directory.
 
-1. Select a city of interest to you.
+1. Select a city or region of interest to you.
 1. Download the appropriate data file - it will be named `listings.csv.gz` - this is a `csv` file compressed with `gzip` compressino.
 
 ### Upload the data file to i6
@@ -56,7 +56,7 @@ Use the `mongo` command line client to run the following queries - save both the
 
 1. show exactly two documents from the `listings` collection in any order
 1. show exactly 10 documents in any order, but "prettyprint" in easier to read format, using the `pretty()` function.
-1. choose two `host_names` who are superhosts (available in the `host_is_superhost` field), and show all of the listings offered by either of the two hosts
+1. choose two hosts (by reffering to their `host_id` values) who are superhosts (available in the `host_is_superhost` field), and show all of the listings offered by both of the two hosts
    - only show the `name`, `price`, `neighbourhood`, `host_name`, and `host_is_superhost` for each result
 1. find all the unique `host_name` values (see [the docs](https://docs.mongodb.com/manual/reference/method/db.collection.distinct/))
 1. find all of the places that have more than 2 `beds` in a neighborhood of your choice (referred to as `neighbourhood_group_cleansed` in the data file), ordered by `review_scores_rating` descending
@@ -131,7 +131,7 @@ Read [the pymongo docs](https://pymongo.readthedocs.io/en/stable/index.html) to 
 Reproduce one of your earlier queries:
 
 - find all of the places that have more than 2 `beds` in a neighborhood of your choosing, ordered by `review_scores_rating` descending
-- only show the `name`, `beds`, `city`, `review_scores_rating`, and `price`
+- only show the `name`, `beds`, `review_scores_rating`, and `price`
 - note that in `pymongo`, you'll have to quote all of your keys.
 
 ### Requesting extra credit
