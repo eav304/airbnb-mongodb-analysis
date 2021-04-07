@@ -52,7 +52,7 @@ mongoimport --headerline --type=csv --db=your_db_name --collection=listings --ho
 
 ## Part 2: Data analysis in MongoDB
 
-Use the `mongo` command line client to run the following queries - save both the query and the first 3 result documents to include in your report later.
+Use the `mongo` command line client to run the following queries - save both the query and up to the first 10 result documents for each query to include in your report later.
 
 1. show exactly two documents from the `listings` collection in any order
 1. show exactly 10 documents in any order, but "prettyprint" in easier to read format, using the `pretty()` function.
