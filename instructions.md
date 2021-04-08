@@ -87,7 +87,7 @@ Analysis:
 - Describe each of the analyses you have performed. For each query, include:
   - a description of the query
   - the code used to perform it
-  - up to the first three results in a preformatted text block
+  - up to the first three results in a preformatted text block (feel free to clip the text in fields to prevent line-wrapping)
   - describe any insights the analysis shows that may not be obvious to someone just viewing the raw data.
 
 ## Part 3: Extra credit
