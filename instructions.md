@@ -79,12 +79,16 @@ Data set details:
 
 - The origin of your data set - what is it and where does it come from. Include a link to the URL of the source.
 - What format the original data file was in (CSV, JSON, or other).
-- Display some of the raw data from the original data file (the first 20 rows is enough). Use Markdown's ability to display tables - see the examples in the Markdown guide linked above.
+- Display some of the raw data from the original data file (the first 20 rows is enough - feel free to clip the text in fields to prevent line-wrapping). Use Markdown's ability to display tables - see the examples in the Markdown guide linked above.
 - Describe any problems that were present in the data and the scrubbing tasks that were necessary to prepare your data set for import - include any scrubbing done in Python, a text editor, or any other tool. Be specific with examples of the problems in the original data and the way in which those were solved. Feel free to show small snippets of relevant code - see the examples of code "syntax highlighting" in the Markdown guide linked above.
 
 Analysis:
 
-- Describe each of the analyses you have performed - include a description of each, include the code used to perform it, and describe any insights the analysis shows that may not be obvious to someone just viewing the raw data.
+- Describe each of the analyses you have performed. For each query, include:
+  - a description of the query
+  - the code used to perform it
+  - up to the first three results in a preformatted text block
+  - describe any insights the analysis shows that may not be obvious to someone just viewing the raw data.
 
 ## Part 3: Extra credit
 
